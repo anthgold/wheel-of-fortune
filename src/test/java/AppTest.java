@@ -20,24 +20,14 @@ public class AppTest extends FluentTest {
   @Test
   public void rootTest() {
     goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("Square finder");
+    assertThat(pageSource()).contains("Something red; then something green");
   }
 
-  @Test
+/*  @Test  // nameOfFunction_testCase_expectedResult()
   public void squareTestIsASquare() {
     goTo("http://localhost:4567/");
-    fill("#length").with("5");
-    fill("#width").with("5");
-    submit(".btn");
-    assertThat(pageSource()).contains("Your rectangle is a square!");
+    // test goes here
+    // assertFoo(pageSource()).contains("Your foo is a bar!"); */
   }
 
-  @Test
-  public void squareTestIsNotASquare() {
-    goTo("http://localhost:4567/");
-    fill("#length").with("7");
-    fill("#width").with("5");
-    submit(".btn");
-    assertThat(pageSource()).contains("Your rectangle is not a square!");
-  }
 }
