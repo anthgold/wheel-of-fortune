@@ -1,9 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "rectangles"
+archivesBaseName = "rename"
 version = '1.0'
-mainClassName = "App" 
+mainClassName = "App"
 
 repositories {
  mavenCentral()
