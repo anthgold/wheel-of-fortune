@@ -22,11 +22,12 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Wheel of Fortune");
   }
 
-/*  @Test  // nameOfFunction_testCase_expectedResult()
-  public void squareTestIsASquare() {
+  @Test
+  public void bLDashCK_cDashT() {
     goTo("http://localhost:4567/");
-    // test goes here
-    // assertFoo(pageSource()).contains("Your foo is a bar!");
-  } */
+    fill (#foo).with("black cat");
+    submit(".btn"); // test that "black cat" becomes "bl-ck c-t"
+    assertThat(pageSource()).contains("bl-ck c-t");
+  }
 
 }
