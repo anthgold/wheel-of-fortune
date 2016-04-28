@@ -1,8 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "rename"
-version = '1.0'
+archivesBaseName = "wheel-of-fortune"
+version = '1.1'
 mainClassName = "App"
 
 repositories {
