@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "wheel-of-fortune"
 version = '1.1'
-mainClassName = "App"
+mainClassName = "WheelOfFortune" // to be changed to App
 
 repositories {
  mavenCentral()
