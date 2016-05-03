@@ -12,7 +12,7 @@ This is the solo coding exercise from the Epicodus Java course, week 1. It creat
 
 ## Support and contact details
 
-Questions? Concerns? Pathos? Pizza? Email: anthgold@gmail.com
+Questions? Concerns? Pathos? Pizza? Email: anthgold@at@gmail.com
 
 
 ## Technologies Used
