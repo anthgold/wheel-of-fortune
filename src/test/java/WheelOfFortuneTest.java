@@ -9,19 +9,19 @@ public class WheelOfFortuneTest {
     assertEquals("t", disemvowel.disemvoweler("t"));
   }
 
-  @Test // nameOfFunction_testCase_expectedResult()
+  @Test
   public void disemvoweler_oneVowel_dash() {
     WheelOfFortune disemvowel = new WheelOfFortune();
     assertEquals("-", disemvowel.disemvoweler("a"));
   }
 
-  @Test // nameOfFunction_testCase_expectedResult()
+  @Test
   public void disemvoweler_oneWord_cDashT() {
     WheelOfFortune disemvowel = new WheelOfFortune();
     assertEquals("c-t", disemvowel.disemvoweler("cat"));
   }
 
-  @Test // nameOfFunction_testCase_expectedResult()
+  @Test 
   public void disemvoweler_twoWords_bLDashCK_cDashT() {
     WheelOfFortune disemvowel = new WheelOfFortune();
     assertEquals("bl-ck c-t", disemvowel.disemvoweler("black cat"));

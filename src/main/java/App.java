@@ -20,7 +20,7 @@ public class App {
       WheelOfFortune myDisemvowel = new WheelOfFortune();
 
       String userInput = request.queryParams("puzzle");
-      String changedString = myDisemvowel.disemvoweler(puzzle);
+      String changedString = myDisemvowel.disemvoweler(userInput);
 
       model.put("output", changedString);
       model.put("template", "templates/results.vtl");
