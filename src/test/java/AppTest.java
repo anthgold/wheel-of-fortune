@@ -3,7 +3,9 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.fluentlenium.core.filter.FilterConstructor.*;
 
 public class AppTest extends FluentTest {
   public WebDriver webDriver = new HtmlUnitDriver();
@@ -22,11 +24,12 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Wheel of Fortune");
   }
 
-/*  @Test  // nameOfFunction_testCase_expectedResult()
-  public void squareTestIsASquare() {
-    goTo("http://localhost:4567/");
-    // test goes here
-    // assertFoo(pageSource()).contains("Your foo is a bar!"); */
+  @Test
+  public void bLDashCK_cDashT() {
+    goTo("http://localhost:4567");
+    fill("#puzzle").with("black cat");
+    submit(".btn");
+    assertThat(pageSource()).contains("bl-ck c-t");
   }
 
 }

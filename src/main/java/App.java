@@ -18,12 +18,13 @@ public class App {
     get("/results", (request, response) -> {
       Map model = new HashMap();
       WheelOfFortune myDisemvowel = new WheelOfFortune();
-      String userInput = request.queryParams("userInput");
 
-      String changedString = myDisemvowel.disemvoweler(userInput);
+      String userInput = request.queryParams("puzzle");
+      String changedString = myDisemvowel.disemvoweler(puzzle);
 
       model.put("output", changedString);
       model.put("template", "templates/results.vtl");
+
       return new ModelAndView(model, layout);
       }, new VelocityTemplateEngine());
 
